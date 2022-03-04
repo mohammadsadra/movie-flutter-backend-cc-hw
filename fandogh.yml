@@ -1,0 +1,10 @@
+kind: ExternalService
+name: movie-python-back
+spec:
+  image_pull_policy: Always
+  port: 80
+  source:
+    context: .
+    project_type: flask
+    python_version: '3.7'
+    wsgi_module: app:app
